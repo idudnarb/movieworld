@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/register.style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script src="./js/register.js" defer></script>
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="content">
+      <h5>movieplace</h5>
+      <h5>movieplace</h5>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <form data-register-form action="">
+          <h3>Sign Up</h3>
+          <div class="information">
+            <span class="material-icons-outlined"> person </span>
+            <input data-register-username type="text" placeholder="Username" />
+            <span class="material-icons-outlined"> lock </span>
+            <input
+              data-register-password
+              type="password"
+              placeholder="Password"
+            />
+            <span class="material-icons-outlined"> email </span>
+            <input data-register-email type="email" placeholder="Email" />
+          </div>
+
+          <div class="information">
+            <span class="material-icons-outlined"> badge </span>
+            <input
+              data-register-firstname
+              type="text"
+              placeholder="First Name"
+            />
+            <span class="material-icons-outlined"> badge </span>
+            <input data-register-lastname type="text" placeholder="Last Name" />
+            <span class="material-icons-outlined"> numbers </span>
+            <input data-register-age type="number" placeholder="Age" />
+          </div>
+
+          <div class="information">
+            <span class="material-icons-outlined"> flag </span>
+            <input data-register-country type="text" placeholder="Country" />
+
+            <span class="material-icons-outlined"> home </span>
+            <input data-register-city type="text" placeholder="City" />
+            <span class="material-icons-outlined"> numbers </span>
+            <input data-register-zipcode type="number" placeholder="ZipCode" />
+          </div>
+
+          <div class="information-button">
+            <button class="button-login" type="submit">Register!</button>
+          </div>
+
+          <div class="information-show">
+            <p>
+              <input type="checkbox" onclick="showPassword()" />Show Password
+            </p>
+
+            <a class="notlogyet" href="./login.html"
+              >Already a member? Login!</a
+            >
+          </div>
+          <p data-register-error id="erroreg"></p>
+        </form>
+      </div>
+    </div>
+    <footer>Copyright of Udi Brand &copy;</footer>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  color: white;
+  margin: 5px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 5px;
+}
+
+.card:hover {
+  border: 1.5px solid #456bd9;
+  background-color: #456ad986;
+}
+
+.card-but {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-primary {
+  font-size: 10px;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  padding: 0.2rem;
+  text-align: center;
+  color: orange;
+}
+
+.btn-primary:hover {
+  border: 1px solid tomato;
+}

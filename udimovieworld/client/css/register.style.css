@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bangers", cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.75) url(../images/film2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.container {
+  height: 95vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+h3 {
+  color: white;
+  border-bottom: 2px solid orange;
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+
+.information {
+  width: 90%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid orange;
+}
+.information-show {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notlogyet {
+  text-decoration: none;
+  color: red;
+}
+
+.information > input {
+  color: white;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: center;
+}
+
+.information-button {
+  width: 100%;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.button-login {
+  width: 90%;
+  border: 2px solid orangered;
+  padding: 5px;
+  color: white;
+  margin-left: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#erroreg {
+  font-size: 0.9rem;
+}
+
+.content {
+  position: relative;
+}
+
+.content h5 {
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+}
+
+.content h5:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px orangered;
+  margin-left: 10px;
+}
+
+.content h5:nth-child(2) {
+  color: orange;
+  animation: animate 2s ease-in-out infinite;
+  margin-left: 10px;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
